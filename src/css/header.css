@@ -153,9 +153,9 @@ ul {
   .nav-right {
     gap: 40px;
   }
-.hamburger-menu{
-height: 28px;
-}
+  .hamburger-menu {
+    height: 28px;
+  }
   .hamburger-menu .icon-Nav {
     width: 100px;
     left: 170px;
@@ -215,6 +215,8 @@ height: 28px;
 
     margin-top: 50px;
   }
+
+  
 }
 
 /* Masaüstü Stilleri */
@@ -267,4 +269,24 @@ height: 28px;
     top: 0px;
     left: 845px;
   }
+}
+
+
+/* Backdrop: kapalıyken görünmez ve tıklanamaz */
+.off-canvas-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  opacity: 0;
+  pointer-events: none;
+  transition: background .3s ease, opacity .3s ease;
+  z-index: 900;           /* Menü 1000 ise bu 900 kalsın (menü üstte) */
+}
+
+/* Menü AÇIKKEN backdrop'u aktif et */
+/* Eğer backdrop HEMEN sonra ise + kullan */
+#off-canvas-menu:target + .off-canvas-backdrop {
+  background: rgba(0,0,0,.5);
+  opacity: 1;
+  pointer-events: auto;
 }
