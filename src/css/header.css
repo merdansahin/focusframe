@@ -279,12 +279,12 @@ ul {
   background: rgba(0,0,0,0);
   opacity: 0;
   pointer-events: none;
-  transition: background .3s ease, opacity .3s ease;
-  z-index: 900;           /* Menü 1000 ise bu 900 kalsın (menü üstte) */
+  transition: background .3s ease-in-out, opacity .3s ease-in-out;
+  z-index: 900;           
 }
 
 /* Menü AÇIKKEN backdrop'u aktif et */
-/* Eğer backdrop HEMEN sonra ise + kullan */
+
 #off-canvas-menu:target + .off-canvas-backdrop {
   background: rgba(0,0,0,.5);
   opacity: 1;
