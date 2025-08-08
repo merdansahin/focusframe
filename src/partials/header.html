@@ -1,19 +1,95 @@
-<header class="header">
-  <div class="container">
+<!-- SVG Sembolleri (sayfanın başında tanımlanmalı) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="icon-Nav" viewBox="0 0 46 32">
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="miter"
+      stroke-linecap="round"
+      stroke-width="4"
+      d="M9.671 5.074h40.329"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="miter"
+      stroke-linecap="round"
+      stroke-width="4"
+      d="M8.671 24.468h40.329"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="miter"
+      stroke-linecap="round"
+      stroke-width="4"
+      d="M19.602 14.771h30.398"
+    />
+  </symbol>
+</svg>
+
+<!-- HEADER -->
+<header class="container wrap">
+  <div class="header" id="header_section">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+      <!-- Logo -->
+      <a class="logo" href="#top">
+        <img
+          src="./img/Focus.Frame.png"
+          alt="Focus.Frame Logo"
+          decoding="async"
+        />
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+
+      <!-- Menü bağlantıları -->
+      <ul class="nav-links">
+        <li><a href="#about_us">Aboutus</a></li>
+        <li><a href="#our_courses">Our courses</a></li>
+        <li><a href="#our_mentors">Our mentors</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#footerr">Contacts</a></li>
       </ul>
+
+      <!-- Sağ taraf: ikonlar ve buton -->
+      <div class="nav-right">
+        <a href="#" class="camera-icon-link" aria-label="Go to gallery">
+          <svg class="icon icon-camera">
+            <use href="./img/symbol-defs.svg#icon-camera"></use>
+          </svg>
+        </a>
+        <a
+          class="hamburger-menu"
+          href="#off-canvas-menu"
+          aria-label="Open menu"
+        >
+          <svg class="icon icon-Nav"><use href="#icon-Nav"></use></svg>
+        </a>
+        <button
+          type="button"
+          onclick="location.href='#sign_up'"
+          class="main-button"
+        >
+          SIGN UP
+        </button>
+      </div>
     </nav>
   </div>
 </header>
+
+<!-- OFF-CANVAS MENU -->
+<aside id="off-canvas-menu" class="off-canvas-menu">
+  <a href="#top" class="close-icon" aria-label="Close menu">&times;</a>
+  <ul>
+    <li><a href="#about_us">About us</a></li>
+    <li><a href="#our_courses">Our courses</a></li>
+    <li><a href="#our_mentors">Our mentors</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#footerr">Contacts</a></li>
+  </ul>
+  <img
+    src="./img/menu-img.jpg"
+    alt="Decorative Camera"
+    class="off-canvas-image"
+    decoding="async"
+  />
+</aside>

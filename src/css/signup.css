@@ -1,0 +1,161 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.signup {
+  border-radius: 10px;
+}
+
+p.signup-description {
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-input ,
+.signup-textarea {
+  background-color: var(--black);
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--white);
+  resize: vertical;
+}
+.signup-textarea {
+  height: 100px;
+  font-family: var(--font);
+}
+.signup-input::placeholder {
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--font);
+}
+.signup-textarea::placeholder {
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--font);
+}
+.signup-button {
+  margin-top: 20px;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: var(--dark-grey);
+  color: var(--brown);
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.privacy-text a {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+.signup-images {
+  display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .signup-images {
+    display: none;
+  }
+
+  .wrapper {
+    height: 577px;
+  }
+  .signup{
+    margin: 0 auto;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    margin: 0 auto;
+    gap: 70px;
+    height: 700px;
+  }
+
+  .signup-images {
+    width: 540px;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: flex-end;
+  }
+
+  .img1-oval {
+    width: 180px;
+    height: 288px;
+    background-color: var(--brown);
+    border-radius: 1000px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .img2-oval {
+    width: 340px;
+    height: 540px;
+    background-color: var(--dark-grey);
+    border-radius: 1000px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .img1-oval img {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    max-width: 163px;
+    max-height: 154px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    border-radius: 12px;
+  }
+
+  .img2-oval img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 254px;
+    max-height: 313px;
+    border-radius: 12px;
+  }
+
+  .signup {
+    max-width: 480px;
+    float: left;
+  }
+}
