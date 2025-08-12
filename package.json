@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/focus-frame-project/",
+    "build": "vite build --base=/focus-frame-project-2/",
     "preview": "vite preview"
   },
   "devDependencies": {
