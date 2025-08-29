@@ -6,7 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: 'https://merdansahin.github.io/focus_frame_project-2/',
+    base: 'https://merdansahin.github.io/focusframe/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },

@@ -1,11 +1,11 @@
 {
-  "name": "focus_frame_project-2",
+  "name": "focusframe",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/focus_frame_project-2/",
+    "build": "vite build --base=/focusframe/",
     "preview": "vite preview"
   },
   "devDependencies": {
