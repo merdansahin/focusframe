@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/http://localhost:5174/focusframe/",
+    "build": "vite build --base=/http://goit.com/merdansahin/focusframe/",
     "preview": "vite preview"
   },
   "devDependencies": {
