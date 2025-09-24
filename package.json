@@ -1,12 +1,13 @@
 {
-  "name": "focusframe",
+  "name": "focusfre",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/http://goit.com/merdansahin/focusframe/",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
     "glob": "^11.0.0",
